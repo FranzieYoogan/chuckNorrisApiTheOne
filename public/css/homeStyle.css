@@ -32,3 +32,11 @@ body {
    
 
 }
+
+.errorStyle {
+
+    color: red;
+    z-index: 600;
+    display: block;
+    visibility: visible;
+}

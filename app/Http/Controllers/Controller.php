@@ -15,24 +15,29 @@ class Controller extends BaseController
     public function getApi(Request $request) {
 
         $search = $request->input('value');
+      
 
         if(isset($_POST['submit']) and $search) {
 
 
             $api = Http::get("https://api.chucknorris.io/jokes/random?category=$search");
-            $response = $api->json(); 
-
-            foreach($response as $data) {
-
-
-            }
-
-         
+            $response = json_decode($api); 
             
-             return view('welcome', ['data' => $data,'search' => $search]);
+            if($api) {
+            
+
+
+                return view('welcome', ['search' => $search,'response' => $response]);
+
+            } 
+    
+
+          
+            } 
+            
         }
 
 
-    }
+    
 
 }

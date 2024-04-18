@@ -22,15 +22,41 @@
 
             @include('header')
 
-            @if(isset($_POST['submit']))
+            @if(isset($_POST['submit']) && isset($response))
    
 
             <section class="containerData">
 
-                <div class="data">
+                <div id="data" class="data">
 
-                    <h1>Categorie: "{{$search}}"</h1>
-                    <h1>{{$data}}</h1>
+                    <h1 id="categorieValue">Categorie: "{{$search}}"</h1>
+
+                    @foreach($response as $data) 
+
+             
+
+                    @endforeach
+
+     
+                    <h1 id="dataValue">{{$data}}</h1>
+               
+                    @endif
+
+                    @if(isset($data)  && $data == "/jokes/random")
+
+                    <h1 style="text-align: center">ERROR</h1>
+
+                    <script>
+
+                        document.getElementById('categorieValue').style.display = "none"
+                        document.getElementById('dataValue').style.display = "none"
+
+
+                    </script>
+
+                    @endif
+
+                    
 
                 </div>
 
@@ -41,6 +67,7 @@
 
       
 
-            @endif
+          
+
     </body>
 </html>

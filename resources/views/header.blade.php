@@ -28,7 +28,7 @@
             <form class="d-flex" role="search" method="POST", action="/">
                 @csrf
 
-              <input class="form-control me-2" type="search" name="value" placeholder="Search" aria-label="Search" required>
+              <input class="form-control me-2" type="search" name="value" id="value" placeholder="Search" aria-label="Search" required>
               <button class="btn btn-outline-success" name="submit" type="submit">Search</button>
             </form>
           </div>

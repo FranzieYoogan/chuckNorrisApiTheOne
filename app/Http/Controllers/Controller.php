@@ -29,7 +29,7 @@ class Controller extends BaseController
 
          
             
-             return view('welcome', ['data' => $data]);
+             return view('welcome', ['data' => $data,'search' => $search]);
         }
 
 

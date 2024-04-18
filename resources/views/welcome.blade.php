@@ -29,6 +29,7 @@
 
                 <div class="data">
 
+                    <h1>Categorie: "{{$search}}"</h1>
                     <h1>{{$data}}</h1>
 
                 </div>

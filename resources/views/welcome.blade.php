@@ -25,8 +25,18 @@
             @if(isset($_POST['submit']))
    
 
+            <section class="containerData">
+
+                <div class="data">
+
+                    <h1>{{$data}}</h1>
+
+                </div>
+
             
-            <h1>{{$data}}</h1>
+
+            </section>
+     
 
       
 

@@ -9,3 +9,25 @@ body {
 
 }
 
+.containerData {
+
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center;
+   
+
+}
+
+
+.data {
+
+    border: 2px solid orange;
+    border-radius: 20px;
+    margin-top: 4em;
+    width: 50%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+    
+
+}

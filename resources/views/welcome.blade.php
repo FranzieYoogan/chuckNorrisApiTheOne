@@ -44,12 +44,13 @@
 
                     @if(isset($data)  && $data == "/jokes/random")
 
-                    <h1 style="text-align: center">ERROR</h1>
+                    <h1 class="errorStyle" style="text-align: center">ERROR</h1>
 
                     <script>
 
                         document.getElementById('categorieValue').style.display = "none"
                         document.getElementById('dataValue').style.display = "none"
+                        document.getElementById('data').style.border = "2px solid transparent"
 
 
                     </script>

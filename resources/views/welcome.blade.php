@@ -29,7 +29,7 @@
 
                 <div id="data" class="data">
 
-                    <h1 id="categorieValue">Categorie: "{{$search}}"</h1>
+                    <h1 id="categorieValue">Category: "{{$search}}"</h1>
 
                     @foreach($response as $data) 
 

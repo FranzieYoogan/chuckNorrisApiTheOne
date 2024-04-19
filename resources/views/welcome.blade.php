@@ -13,7 +13,7 @@
  
 
             <link rel="stylesheet" href="{{asset('/css/homeStyle.css')}}">
-
+            <link rel="stylesheet" href="{{asset('/css/header.css')}}">
 
     </head>
     <body class="antialiased">
@@ -38,7 +38,7 @@
                     @endforeach
 
      
-                    <h1 id="dataValue">{{$data}}</h1>
+                    <h1 class="dataValue" id="dataValue">{{$data}}</h1>
                
                     @endif
 
@@ -67,8 +67,9 @@
      
 
       
-
+    
           
 
     </body>
+    @include('footer')
 </html>

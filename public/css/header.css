@@ -55,9 +55,9 @@ button:hover {
   @media only screen and (width: 400px) {
     body {
       
-        background-size: 230%;
-        background-position-x: 50%;
-        background-position-y: -10%;
+        background-size: 250% !important;
+        background-position-x: 50% !important;
+        background-position-y: -5% !important;
 
     }
   }

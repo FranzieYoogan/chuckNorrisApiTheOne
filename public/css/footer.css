@@ -1,0 +1,68 @@
+footer {
+
+
+    position: absolute;
+    bottom: 0 !important;
+    top: auto !important;
+    width: 100%;
+    background-color: orange !important;
+  
+}
+
+
+
+
+.containerSocials {
+
+    position: relative;
+    top: 0.3em;
+    height: 5vh;
+ 
+}
+.btnLink {
+
+    color: white !important;
+    border: 1px solid transparent !important;
+    box-shadow: 0px 0px 4px 0px black !important;
+
+}
+
+.btnLink:hover {
+
+    color: black !important;
+    border: 1px solid transparent !important;
+    box-shadow: 1px 1px 2px 2px black !important;
+
+}
+
+.copyrightStyle {
+
+    border-top: 2px solid black;
+    color: white !important;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.linkCopyright {
+
+    border-bottom: 1px solid white;
+    transition: 1s;
+}
+
+.linkCopyright:hover {
+
+    border-bottom: 1px solid transparent;
+    color: black !important;
+    text-shadow: 2px 2px 2px white !important;
+}
+
+
+@media only screen and (width: 554px) {
+    .containerSocials {
+        position: relative !important;
+        bottom: 1em !important;
+        height: 7vh;
+    }
+    
+  }
